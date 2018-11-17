@@ -1,0 +1,9 @@
+package combit.ListLabel23.DataProviders;import Common.Activation;import static Common.Helper.Convert;import static Common.Helper.getGetObjectName;import static Common.Helper.getReturnObjectName;import static Common.Helper.ConvertToConcreteInterfaceImplementation;import Common.Helper;import com.javonet.Javonet;
+                        import com.javonet.JavonetException;
+                        import com.javonet.JavonetFramework;
+                        import com.javonet.api.NObject;
+                        import com.javonet.api.NEnum;
+                        import com.javonet.api.keywords.NRef;
+                        import com.javonet.api.keywords.NOut;
+                        import com.javonet.api.NControlContainer;import java.util.concurrent.atomic.AtomicReference;import combit.ListLabel23.DataProviders.*;
+import jio.System.*;public interface ILlDataProvider { public java.lang.Integer OpenTable (java.lang.String tableName,NObject dataProvider);public java.lang.Integer OpenChildTable (java.lang.String relationName,NObject dataProvider);public java.lang.Integer GetRowCount (AtomicReference<java.lang.Integer> count);public java.lang.Integer DefineDelayedInfo (java.lang.Integer delayedInfo);public java.lang.Integer MoveNext ();public java.lang.Integer DefineRow (java.lang.Integer parentRowMode,NObject parentPath);public java.lang.Integer Dispose ();public java.lang.Integer SetUsedIdentifiers (NObject usedIdentifiers);public java.lang.Integer ApplySortOrder (java.lang.String sortDescription);public java.lang.Integer ApplyFilter (NObject keys,NObject values);public java.lang.Integer ApplyAdvancedFilter (java.lang.String filter,NObject parameters);public java.lang.Integer SetOption (TableOption option,NObject value);public java.lang.Integer GetOption (TableOption option,NObject value);}
